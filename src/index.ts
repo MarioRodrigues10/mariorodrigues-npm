@@ -17,9 +17,9 @@ const questions = [
       {
         name: `Send me an ${chalk.green.bold("email")}?`,
         value: () => {
-          open("mailto:afonsojorgeramos@gmail.com");
+          open("mailto:mjsrodrigues4@gmail.com");
           console.log(
-            "afonsojorgeramos@gmail.com is awaiting for your email!\nSee you soon.\n"
+            "mjsrodrigues4@gmail.com is awaiting for your email!\nSee you soon.\n"
           );
         },
       },
@@ -34,18 +34,14 @@ const questions = [
 ];
 
 const data = {
-  name: chalk.bold.green("        Afonso Jorge Ramos"),
-  handle: chalk.white("@afonsojramos"),
-  work: `${chalk.white("Junior Software Developer @")} ${chalk
-    .hex("#005DAD")
-    .bold("eDreams")}`,
-  github: chalk.gray("https://github.com/") + chalk.green("afonsojramos"),
-  linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("afonsojramos"),
+  name: chalk.bold.green("      Mário Rodrigues"),
+  handle: chalk.white("@mariorodrigues10"),
+  github: chalk.gray("https://github.com/") + chalk.green("mariorodrigues10"),
   web:
     chalk.white("https://") +
-    chalk.cyan("afonsojramos.me") +
+    chalk.cyan("mariorodrigues10.github.io") +
     chalk.hidden("/?ref=npx"),
-  npx: `${chalk.red("npx")} ${chalk.white("afonsojramos")}`,
+  npx: `${chalk.red("npx")} ${chalk.white("mariorodrigues10")}`,
 
   labelWork: chalk.white.bold("       Work:"),
   labelGitHub: chalk.white.bold("     GitHub:"),
@@ -58,9 +54,7 @@ const me = boxen(
   [
     `${data.name} / ${data.handle}`,
     ``,
-    `${data.labelWork}  ${data.work}`,
     `${data.labelGitHub}  ${data.github}`,
-    `${data.labelLinkedIn}  ${data.linkedin}`,
     `${data.labelWeb}  ${data.web}`,
     ``,
     `${data.labelCard}  ${data.npx}`,
