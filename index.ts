@@ -43,7 +43,7 @@ const data = {
     chalk.white("https://") +
     chalk.cyan("mariorodrigues10.github.io") +
     chalk.hidden("/?ref=npx"),
-  npx: `${chalk.red("npx")} ${chalk.white("mariorodrigues10")}`,
+  npx: `${chalk.red("npx")} ${chalk.white("mariorodriguess")}`,
 
   labelWork: chalk.white.bold("       Work:"),
   labelGitHub: chalk.white.bold("     GitHub:"),
@@ -61,8 +61,7 @@ const me = boxen(
     ``,
     `${data.labelCard}  ${data.npx}`,
     ``,
-    `${chalk.italic("Avid enthusiast for open source software development.")}`,
-    `${chalk.italic("Open source perspective of life.")}`,
+    `${chalk.italic("Software development is a lifestyle.")}`
   ].join("\n"),
   {
     margin: 1,
