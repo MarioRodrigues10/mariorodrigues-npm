@@ -36,19 +36,22 @@ const questions = [
 ];
 
 const data = {
-  name: chalk.bold.green("      Mário Rodrigues"),
+  name: chalk.bold.red("      Mário Rodrigues"),
   handle: chalk.white("@mariorodrigues10"),
   github: chalk.gray("https://github.com/") + chalk.green("mariorodrigues10"),
   web:
     chalk.white("https://") +
     chalk.cyan("mariorodrigues10.github.io") +
     chalk.hidden("/?ref=npx"),
+  twitter:
+    chalk.white("https://twitter.com/") +
+    chalk.red("MarioWhileCode") ,
   npx: `${chalk.red("npx")} ${chalk.white("mariorodriguess")}`,
 
   labelWork: chalk.white.bold("       Work:"),
   labelGitHub: chalk.white.bold("     GitHub:"),
-  labelLinkedIn: chalk.white.bold("   LinkedIn:"),
   labelWeb: chalk.white.bold("        Web:"),
+  labelTwitter: chalk.white.bold("    Twitter:"),
   labelCard: chalk.white.bold("       Card:"),
 };
 
@@ -58,10 +61,11 @@ const me = boxen(
     ``,
     `${data.labelGitHub}  ${data.github}`,
     `${data.labelWeb}  ${data.web}`,
+    `${data.labelTwitter} ${data.twitter}`,
     ``,
     `${data.labelCard}  ${data.npx}`,
     ``,
-    `${chalk.italic("Software development is a lifestyle.")}`
+    `${chalk.italic("I GOT NO TYPE, CODING DURING THE NIGHT IT'S THE ONLY THING THAT I LIKE.")}`
   ].join("\n"),
   {
     margin: 1,
